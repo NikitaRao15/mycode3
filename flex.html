@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Properties</title>
+    <style>
+      .container {
+        background-color: chartreuse;
+        border: 5px solid rgb(242, 75, 102);
+        margin: 4px;
+        padding: 4px;
+        display: flex;
+        height: 500px;
+        flex-direction:column;
+        flex-wrap: wrap;
+        /* flex-flow: wrap; */
+        /* shorthand property of felx direction and flex wrap */
+        /* justify-content: start;
+        align-items: start;*/
+        align-content:start; 
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 3px solid black;
+        margin: 1px;
+        padding: 1px;
+        color: bisque;
+        /* flex-shrink: 1;
+        flex-grow:;
+        flex-basis: auto; */
+        /* flex: 1 5 1000px; */
+
+      }
+      #box1 {
+        background-color: blue;
+        order: 002;
+      }
+      #box2 {
+        background-color: rgb(108, 76, 76);
+      }
+      #box3 {
+        background-color: rgb(60, 43, 22);
+      }
+      #box4 {
+        background-color: crimson;
+        order: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">box1</div>
+      <div class="box" id="box2">box2</div>
+      <div class="box" id="box3">box3</div>
+      <div class="box" id="box4">box4</div>
+    </div>
+  </body>
+</html>
