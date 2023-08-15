@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKIT Portal</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: whitesmoke;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 350px;
+        height: 550px;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 4px;
+      }
+      img {
+        height: 10%;
+        width: 20%;
+      }
+      .formbox{
+        border:2px solid grey;
+        border-top: 0px;
+        padding-bottom:70px;
+        padding-left:30px;
+      }
+      .formbox h4{
+        font-weight:100;
+        padding-top: 30px;
+        padding-left:50px;
+        padding-right:55px;
+      }
+      .formbox input{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left:15px;
+        margin-right: 32px;
+        width:250px;
+        height:30px;
+        padding-left: 5px;
+        border-radius: 4px;
+      }
+      .formbox button{
+        background-color: green;
+        width:250px;
+        height:30px;
+        border-radius: 2px;
+        color:white;
+        margin-top: 20px;
+        margin-left:15px;
+        margin-bottom: 50px;
+      }
+      .formbox button:hover{
+        background-color: rgb(27, 197, 27);
+      }
+      .formbox a{
+        margin-left: 40px;
+        padding-top: 500px;
+        margin-top:50px;
+        text-decoration: none;
+        color: grey;
+      }
+      .appinfo{
+        margin-right:15px ;
+        margin-left: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        color:rgb(140, 230, 230);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="/images/skit.jpeg" alt="skit logo pic" />
+        <div class="formbox">
+          <form action="#">
+            <h4>SKIT INTERNET PORTAL</h4>
+            <input
+              type="text"
+              placeholder="Username"
+              name="user-name"
+              value=""
+            />
+            <br />
+            <input type="password" placeholder="Password" name="pwd" value="" />
+            <br />
+            <button>Login</button>
+            <br />
+            <a href="#">Click here to check data usage</a>
+          </form>
+        </div>
+        <div class="appinfo">
+        <a href="#">Download App</a>
+        <a href="#">Download Certificate</a>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
