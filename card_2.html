@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARD</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(226, 221, 245);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        width: 300px;
+        height: 550px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+      img {
+        height: 30%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 70%;
+        text-align: center;
+      }
+      .box {
+        width: 85%;
+        height: 10%;
+        background-color: rgb(206, 246, 246);
+        border-radius: 7px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+      #payment {
+        width: 85%;
+        height: 10%;
+        background-color: rgb(55, 4, 102);
+        color: white;
+        border-radius: 7px;
+        box-shadow: 0 10px 20px rgba(45, 45, 63, 0), rgba(37, 37, 40, 0);
+      }
+      .cbox a {
+        text-decoration: none;
+        color: gray;
+        font-weight: bold;
+        font-size: large;
+      }
+      .leftbox {
+        /* width: fit-content; */
+        height: 100%;
+        color: rgb(12, 12, 14);
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .imgbox {
+        margin-top: 60px;
+        height: 90px;
+        width: 45px;
+      }
+      .imgtextbox {
+        line-height: 18px;
+      }
+      .rightbox a {
+        text-decoration: none;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="/images/front.jpeg" />
+        <div class="textbox">
+          <h2>Order Summary</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, aliquid aperiam hic. Ab
+            assumenda natus molestias
+          </p>
+        </div>
+        <div class="box">
+          <div class="leftbox">
+            <div class="imgbox">
+              <img src="/images/audio.jpeg" />
+            </div>
+            <div class="imgtextbox">
+              <p>Amount</p>
+              <p>$99.9/year</p>
+            </div>
+          </div>
+          <div class="rightbox">
+            <a href="#">Change</a>
+          </div>
+        </div>
+        <button id="payment">Proceed To Payment</button>
+        <div class="cbox">
+          <a href="#">Cancel Order</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
